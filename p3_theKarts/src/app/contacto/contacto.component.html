@@ -1,0 +1,52 @@
+<div class="row justify-content-center">
+    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-6 jumbotron jumbo1">
+        <h3 class="display-4">Contacto</h3>
+        <hr class="my-4">
+        <p class="lead">Rúa Guia 4<br>36412 Porriño<br><br>Telefono: +34 986 33 91 77
+        </p>
+
+        <p><b>Horario de apertura</b><br>Martes a viernes<br>16:00 a 21:00<br>Sábado y domingo<br>11:00 a 14:00 y 16:00
+            a
+            21:00</p>
+        <div class="boton"><a class="btn btn-lg" routerLink="/catalogo" role="button">Catálogo</a></div>
+    </div>
+
+
+
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 offset-xl-2 jumbotron jumbo2 ">
+       
+            <h3 class="display-4">Reserva</h3><hr class="my-4">
+            <form [formGroup]="myForm" autocomplete="off">
+                <table>
+                    <tr>
+                        <mat-form-field>
+                            <input matInput formControlName="usuario" type="text" placeholder="usuario" required>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <input matInput formControlName="correo" type="text" placeholder="email" required>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <textarea matInput formControlName="contenido" placeholder="contenido" required></textarea>
+                        </mat-form-field>
+                    </tr>
+                </table>
+                
+
+                <div class="col-12 mb-2 boton">
+                    <button class="btn btn-md" (click)="goBack()">Back</button>
+                    <button class="btn btn-md" [disabled]="myForm.invalid"
+                        (click)="saveComentario(usuario,correo,contenido)">Post</button>
+                </div>
+            </form>
+            <div class="col-12 iconos">
+              <img src="../../assets/img/facebook.png" class="col-4 img " alt="...">
+             <img src="../../assets/img/instagram.png" class="img col-4" alt="...">
+              <img src="../../assets/img/github.png" class="col-4 img" alt="...">
+            </div>
+        
+    </div>
+</div>

@@ -1,0 +1,64 @@
+.articulo{
+margin-top:70px;
+}
+[class*='col-'] {
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  a {
+    text-decoration: none;
+  }
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .col-1-4 {
+    width: 25%;
+  }
+.comentario{
+  border: 2px solid #000000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color:#FFFFCC ;
+}
+  .usuario{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 30px;
+background-color:#FFFFFF ;
+text-align: left;
+padding-left: 10px;
+margin-bottom: 5px;
+
+  }
+  .contenido{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 30px;
+    background-color:#FFFFFF;
+text-align: left;
+padding-bottom: 20px;
+padding-left: 10px;
+margin-bottom: 5px;
+  }
+
+  @media (max-width: 600px) {
+    .module {
+      font-size: 10px;
+      max-height: 75px; }
+  }
+  @media (max-width: 1024px) {
+    .grid {
+      margin: 0;
+    }
+    .module {
+      min-width: 60px;
+    }
+  }

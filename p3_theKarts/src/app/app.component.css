@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0rem;
+    left: 0px;
+    right: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: #ffffff;
+    z-index: 10;
+  }
+  .docs-footer {
+    display: inline;
+    text-align: right;
+  }
+  a {
+    text-decoration: none;
+    color:#ffffff
+  }
+
+  @media (min-width: 589px) {
+    footer {
+      font-size:1rem;
+    }
+  }
+
+  @media (max-width: 588px){
+    footer{
+      font-size:0.75rem;
+  }
+}

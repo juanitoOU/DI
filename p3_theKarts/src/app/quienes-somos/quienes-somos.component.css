@@ -1,0 +1,14 @@
+.comienzo{
+    margin-top: 15%;
+    text-align: justify;
+    background-color:#FFFFCC;
+}
+.boton{
+text-align: center;
+margin-top: 50px;
+
+}
+.boton .btn {
+    background-color: #000000;
+color: #FFFFFF
+}

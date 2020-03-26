@@ -1,0 +1,68 @@
+<div class="container my-5">
+    <div class="row ">
+        <div class="text-center mb-4 mt-4">
+
+            <h3>Important news</h3>
+
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10 grid grid-pad">
+                <a *ngFor="let articulo of articulos" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+                    routerLink="/articulos/{{articulo.id}}">
+
+                    <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src={{articulo.imagen}} class="card-img-top" alt="news">
+                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                        </div>
+                        <!--/.Card image-->
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title"><strong>{{articulo.titulo}}</strong></h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text mb-3">{{articulo.resumen}}
+                            </p>
+                            <p class="font-weight-bold dark-grey-text mb-1">
+                                {{articulo.fecha}}</p>
+                            <p class="font-small grey-text mb-0">{{articulo.autor}}</p>
+                            <p class="text-right mb-0 font-small font-weight-bold">Read more</p>
+                        </div>
+                        <!--/.Card content-->
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-2 d-none d-lg-block menu">
+                <h3 class="titulo">Índice</h3>
+                <hr>
+                <a class="item" [routerLink]="['/articulos/1']">Articulo 1</a>
+                <hr>
+                <a class="item" [routerLink]="['/articulos/2']">Articulo 2</a>
+                <hr>
+                <a class="item" [routerLink]="['/articulos/3']">Articulo 3</a>
+                <hr>
+                <a class="item" [routerLink]="['/articulos/4']">Articulo 4</a>
+                <hr>
+                <a class="item" [routerLink]="['/articulos/5']">Articulo 5</a>
+                <hr>
+                <a class="item" [routerLink]="['/articulos/6']">Articulo 6</a>
+                <hr>
+                <a class="item" [routerLink]="['/articulos/7']">Articulo 7</a>
+                <hr>
+                <a class="item" [routerLink]="['/articulos/8']">Articulo 8</a>
+                <hr>
+                <a class="item" [routerLink]="['/articulos/9']">Articulo 9</a>
+
+            </div>
+            <div class="col-12 text-center boton">
+                <button [hidden]="isFirst() || isLast()" class="btn btn-sm" (click)="firstPage()">First</button>
+                <button [hidden]="isFirst()" class="btn btn-md" (click)="return()">Previous</button>
+                <button [hidden]="isLast()" class="btn btn-md" (click)="nextPage()">Next </button>
+                <button [hidden]="isLast() || isFirst()" class="btn btn-sm" (click)="lastPage()">Last</button>
+            </div>
+        </div>
+        <div class="col-12"><a [routerLink]="['/vista-articulos']" routerLinkActive="router-link-active">View all </a></div>
+
+    </div>

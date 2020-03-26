@@ -1,0 +1,32 @@
+.comienzo{
+    margin-top: 15%;
+    text-align:justify ;
+    background-color:#FFFFCC;
+    margin-bottom:5%;
+}
+.mapaXs{
+    text-align: center;
+}
+.mapaXl{
+    text-align: center;
+}
+
+  @media (min-width: 777px) {
+    .mapaXl {
+        display : block;
+    }
+    .mapaXs{
+        display: none;
+    }
+  }
+
+  @media (max-width: 776px){
+    .mapaXl {
+       display: none;
+    }
+    .mapaXs{
+        display : block;
+    }
+  }
+
+

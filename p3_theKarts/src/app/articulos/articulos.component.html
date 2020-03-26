@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card mb-3 articulo">
+        <img class="card-img-top" src={{articulo.imagen}} alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{articulo.titulo}}</h5>
+          <p class="card-text">{{articulo.contenido}}</p>
+          <p class="card-text"><small class="text-muted">{{articulo.fecha}}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+
+      <hr>
+      <h3> Comentarios</h3>
+      <div class="comentario" *ngFor="let coment of coments">
+        <div class="usuario">
+          <p> User: {{coment.usuario}}</p>
+        </div>
+        <!-- <p>Email: {{coment.correo}}</p> -->
+        <div class="contenido">
+          <p>-{{coment.contenido}}</p>
+        </div>
+      </div>
+      <hr>
+
+
+      <b>New Comment</b><br />
+      <form [formGroup]="myForm" autocomplete="off">
+        <table>
+          <tr>
+            <mat-form-field>
+              <input matInput formControlName="usuario" type="text" placeholder="usuario" required>
+            </mat-form-field>
+          </tr>
+          <tr>
+            <mat-form-field>
+              <input matInput formControlName="correo" type="text" placeholder="email" required>
+            </mat-form-field>
+          </tr>
+          <tr>
+            <mat-form-field>
+              <textarea matInput formControlName="contenido" placeholder="contenido" required></textarea>
+            </mat-form-field>
+          </tr>
+        </table>
+
+
+        <div class="col-12 mb-5">
+          <button [disabled]="myForm.invalid" (click)="saveComentario(myForm.usuario, correo, contenido)">Post</button>
+          <button (click)="goBack()">Go back</button>
+
+        </div>
+      </form>
+
+
+
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,18 @@
+body {
+    background-color: #ffff00;
+}
+
+* {
+    font-family: 'Asap', sans-serif;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Concert One', cursive;
+  }
+  
+
+  :any-link {
+      color: #000000
+  }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Asap', sans-serif; }

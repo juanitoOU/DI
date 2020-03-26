@@ -1,0 +1,46 @@
+
+<div class="container my-5 hideContainer" id="#hideContainer">
+    <div class="row ">
+        <div class="text-center mb-4 mt-4">
+            <h3 class="">Last news</h3>
+            <div class="grid grid-pad">
+                <a *ngFor="let articulo of articulos" class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3"
+                    routerLink="/articulos/{{articulo.id}}">
+
+                    <div class="card">
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src={{articulo.imagen}} class="card-img-top img" alt="news">
+                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                        </div>
+                        <!--/.Card image-->
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title"><strong>{{articulo.titulo}}</strong></h4>
+                            <hr>
+                            <!--Text-->
+                            <p class="card-text mb-3">{{articulo.resumen}}
+                            </p>
+                            <p class="font-weight-bold dark-grey-text mb-1">
+                                {{articulo.fecha}}</p>
+                            <p class="font-small grey-text mb-0">{{articulo.autor}}</p>
+                            <p class="text-right mb-0 font-small font-weight-bold">Read more</p>
+                        </div>
+                        <!--/.Card content-->
+                    </div>
+                </a>
+            </div>
+           <!--  <div class="col-12 text-center boton">
+                <button class="btn btn-sm" (click)="lastPage()">Last Page</button>
+                <button class="btn btn-sm" (click)="nextPage()">Next Page</button>
+            </div> -->
+        </div>
+
+    </div>
+</div>
+<!-- <div class="d-flex justify-content-center spinner">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div> -->
