@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name" translatable="false">MaterialWaterTraining</string>
+    <string name="add_button">Añadir</string>
+    <string name="update_button">Editar</string>
+    <string name="delete_button">Borrar</string>
+    <string name="fab">Añadir</string>
+    <string name="title_activity_transition_edit">Editar Nombre</string>
+    <string name="title_activity_transition_add">Añadir Nombre</string>
+    <string name="select_language">Selecciona idioma</string>
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="nombre">nombre</string>
+    <string name="fecha">fecha</string>
+    <string name="kmH">km/h</string>
+    <string name="tipo">tipo</string>
+    <string name="piscina_grande">Piscina grande</string>
+    <string name="piscina_mediana">Piscina mediana</string>
+    <string name="aguas_abiertas">Aguas abiertas</string>
+    <string name="tiempo">tiempo</string>
+    <string name="distancia">distancia</string>
+    <string name="date">Fecha</string>
+    <string name="Kilometros">kilometros</string>
+    <string name="metros">metros</string>
+    <string name="segundos">segundos</string>
+    <string name="minutos">minutos</string>
+    <string name="horas">horas</string>
+    <string name="duracion">duracion</string>
+    <string name="edad">edad</string>
+    <string name="nacionalidad">nacionalidad</string>
+    <string name="entrenamientos_totales">Entrenamientos totales</string>
+    <string name="velocidad_media">velocidad media</string>
+    <string name="distancia_total">Distancia Total</string>
+    <string name="tiempo_total">Tiempo total</string>
+    <string name="edad_default">00</string>
+    <string name="nacionalidad_default">España</string>
+    <string name="idioma">idioma</string>
+    <string name="nombre_default">nombre</string>
+    <string name="estadisticas">Estadisticas</string>
+    <string name="añadir">Añadir</string>
+    <string name="configuracion">Configuracion</string>
+    <string name="anadir">Añadir</string>
+    <string name="editar">Editar</string>
+    <string name="stats">Estadisticas</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="modificar">Modificar</string>
+    <string name="cancelar">Cancelar</string>
+    <string-array name="languages" >
+        <item>@string/spanish</item>
+        <item>@string/english</item>
+    </string-array>
+    <string name="entrenamientostotales">Entrenamientos totales</string>
+</resources>

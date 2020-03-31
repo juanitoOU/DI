@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:title="@string/eliminar"
+            android:id="@+id/delete" />
+        <item android:title="@string/configuracion"
+            android:id="@+id/configuracion" />
+        <item android:title="@string/anadir"
+            android:id="@+id/add" />
+        <item android:title="@string/editar"
+            android:id="@+id/edit"/>
+</menu>
